@@ -16,6 +16,11 @@ body {
   margin: 0 auto;
 }
 
+img {
+  max-width: 100%;
+  height: auto;
+}
+
 a {
   color: inherit;
 }
@@ -64,6 +69,18 @@ footer {
 .big {
   font-size: 130%;
   line-height: 1.25;
+}
+
+.screenshots {
+  display: grid;
+  grid-gap: 15px;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.screenshots img {
+  width: 100%;
+  height: 100px;
+  object-fit: cover;
 }
 
 @media (max-width: 600px) {
