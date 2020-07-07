@@ -45,6 +45,13 @@ button,
   text-transform: uppercase;
 }
 
+button:hover,
+.btn:hover {
+  background-color: #cf0f10;
+  opacity: 1;
+  color: #fff;
+}
+
 h1 {
   font-weight: bold;
   font-size: 3rem;
