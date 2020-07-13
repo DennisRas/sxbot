@@ -14,6 +14,62 @@ body {
   font-family: "Rubik", sans-serif;
   font-size: 16px;
   line-height: 1.6;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+main {
+  flex: 1;
+}
+main > section:first-child {
+  padding-top: 150px;
+}
+
+select,
+input,
+textarea {
+  background-color: #111;
+  border: 0px #666 solid;
+  padding: 5px;
+  font: inherit;
+  color: #fff;
+  margin: 0;
+  line-height: 30px;
+  height: 30px;
+  display: inline-block;
+  vertical-align: top;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+}
+
+::placeholder {
+  color: #ccc;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 15px 0;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+}
+
+table thead th {
+  background-color: #111;
+}
+
+table th,
+table td {
+  padding: 5px 8px;
+  text-align: left;
+  background-color: #191919;
+}
+
+table td {
+  font-size: 90%;
+}
+
+table tr:nth-child(odd) td {
+  background-color: #222;
 }
 
 img {
@@ -140,7 +196,6 @@ section {
   padding-top: 90px;
   padding-bottom: 90px;
   position: relative;
-  text-align: center;
 }
 
 section#intro {
@@ -183,6 +238,10 @@ section#intro .next {
 section#intro .next .icon {
   color: #fff;
   font-size: 150%;
+}
+
+section#features {
+  text-align: center;
 }
 
 section#features img {
