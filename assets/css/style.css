@@ -29,7 +29,7 @@ main > section:first-child {
 select,
 input,
 textarea {
-  background-color: #111;
+  background-color: #1a1d1f;
   border: 0px #666 solid;
   padding: 5px;
   font: inherit;
@@ -39,7 +39,6 @@ textarea {
   height: 30px;
   display: inline-block;
   vertical-align: top;
-  box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
 }
 
 ::placeholder {
@@ -50,18 +49,17 @@ table {
   width: 100%;
   border-collapse: collapse;
   margin: 15px 0;
-  box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
 }
 
 table thead th {
-  background-color: #111;
+  background-color: #1a1d1f;
 }
 
 table th,
 table td {
   padding: 5px 8px;
   text-align: left;
-  background-color: #191919;
+  background-color: #23272a;
 }
 
 table td {
@@ -69,7 +67,7 @@ table td {
 }
 
 table tr:nth-child(odd) td {
-  background-color: #222;
+  background-color: #1f2225;
 }
 
 img {
