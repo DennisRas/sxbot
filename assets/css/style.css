@@ -45,6 +45,28 @@ textarea {
   color: #ccc;
 }
 
+.filters {
+  display: flex;
+  width: 100%;
+}
+
+.filters > *:last-child {
+  margin-left: auto;
+}
+
+.filters nav a {
+  display: inline-block;
+  background-color: #23272a;
+  margin-left: 2px;
+  padding: 2px 10px;
+  text-align: center;
+  font-size: 90%;
+}
+
+.filters nav a.selected {
+  background-color: #444;
+}
+
 table {
   width: 100%;
   border-collapse: collapse;
@@ -60,14 +82,32 @@ table td {
   padding: 5px 8px;
   text-align: left;
   background-color: #23272a;
+  position: relative;
 }
 
-table td {
+table thead th:hover {
+  background-color: #444;
+  cursor: pointer;
+}
+
+table tbody td {
   font-size: 90%;
 }
 
 table tr:nth-child(odd) td {
   background-color: #1f2225;
+}
+
+table thead th.sort::after {
+  content: "\2039";
+  position: absolute;
+  top: 50%;
+  right: 15px;
+  transform: translateY(-50%) rotate(-90deg);
+  color: #fff;
+}
+table thead th.desc::after {
+  content: "\203A";
 }
 
 img {

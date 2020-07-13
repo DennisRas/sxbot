@@ -29,17 +29,20 @@
     <main>
       <section id="commands">
         <div class="container">
-          <select
-            ><option value="">Select category</option></select
-          >
-          <input type="search" placeholder="Search..." />
+          <div class="filters">
+            <select
+              ><option value="">Select category</option></select
+            >
+            <input type="search" placeholder="Search..." />
+            <nav id="pagination"></nav>
+          </div>
           <table>
             <thead>
               <tr>
-                <th>Command</th>
-                <th>Description</th>
-                <th>Category</th>
-                <th>PermissionLvl</th>
+                <th width="200" data-sort="name">Command</th>
+                <th data-sort="description">Description</th>
+                <th width="200" data-sort="category">Category</th>
+                <th width="200" data-sort="permissionLevel">PermissionLvl</th>
               </tr>
             </thead>
             <tbody>
