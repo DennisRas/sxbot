@@ -50,21 +50,25 @@ textarea {
   width: 100%;
 }
 
-.filters > *:last-child {
-  margin-left: auto;
+.filters select,
+.filters input {
+  margin-right: 5px;
 }
 
-.filters nav a {
+#pagination a {
   display: inline-block;
   background-color: #23272a;
-  margin-left: 2px;
   padding: 2px 10px;
   text-align: center;
   font-size: 90%;
 }
 
-.filters nav a.selected {
+#pagination a:hover {
   background-color: #444;
+}
+
+#pagination a.selected {
+  background-color: #666;
 }
 
 table {
